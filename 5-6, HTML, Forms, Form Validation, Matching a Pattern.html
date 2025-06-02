@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/esempio.html" method="POST">
+        <label for="carta">Numero di carta di credito (senza spazi):</label>
+        <br/>
+        <input id="carta" name="carta" type="text" required pattern="[0-9]{14,16}">
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
