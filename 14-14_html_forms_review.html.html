@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/invia-dati" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <br/>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br/>
+        <label for="livello">Seleziona il livello da 1 a 10:</label>
+        <input type="range" name="livello" id="livello" min="1" max="10" step="1">
+        <br/>
+        <label for="opzione1"><input id="opzione1" name="scelte[]" type="checkbox" value="A">Opzione A</label>
+        <label for="opzione2"><input id="opzione2" name="scelte[]" type="checkbox" value="B">Opzione B</label>
+        <label for="opzione3"><input id="opzione3" name="scelte[]" type="checkbox" value="C">Opzione C</label>
+        <br/>
+        <p>Vuoi dare il consenso?</p>
+        <input id="si" name="consenso" type="radio" value="si">
+        <label for="si">Si</label>
+        <input id="no" name="consenso" type="radio" value="no">
+        <label for="no">No</label>
+        <br/>
+        <label id="citta">Digita o scegli una città:</label>
+        <input type="text" id="citta" name="citta" list="citta-lista">
+        <datalist id="citta-lista">
+            <option value="Roma"></option>
+            <option value="Milano"></option>
+            <option value="Napoli"></option>
+        </datalist>
+        <br/>
+        <label for="commento">Scrivi un commento:</label>
+        <textarea type="tet" name="commento" id="commento" rows="4" cols="40">Inserisci qui il tuo commento...</textarea>
+        <br/>
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
