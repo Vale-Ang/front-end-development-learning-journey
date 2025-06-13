@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm, Regina dei Fulmini</title>
+</head>
+
+<body>
+    <header>
+        <h1>Storm, Regina dei Fulmini</h1>
+        <p>Una delle più potenti mutanti dell’universo Marvel.</p>
+        <nav>
+            <a href="#biografia">Biografia</a>
+            <a href="#poteri">Poteri</a>
+            <a href="#curiosità">Curiosità</a>
+            <a href="#bottom">Vai in fondo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="biografia">
+            <h2>Chi è Storm</h2>
+            <p>Storm, o Ororo Munroe, è una mutante con l’abilità di controllare il clima. Leader degli X-Men, ha dimostrato grande coraggio e forza in numerose battaglie.</p>
+            <figure>
+                <img src="assets/images/reginafulmini.png" alt="Illustrazione di Storm in posa eroica" width="50%">
+            </figure>
+        </section>
+        <section id="poteri">
+            <div>
+                <p>Poteri di Storm</p>
+                <ul>
+                    <li>Vento</li>
+                    <li>Fulmini</li>
+                    <li>Volontà incrollabile</li>
+                </ul>
+                <p>Obiettivi di Storm</p>
+                <ol>
+                    <li>Proteggere i mutanti</li>
+                    <li>Guidare con giustizia</li>
+                    <li>Vivere in equilibrio con la natura</li>
+                </ol>
+            </div>
+        </section>
+        <section id="curiosità">
+            <aside>
+                <p>Sapevi che Storm è stata anche la regina del Wakanda?</p>
+            </aside>
+        </section>
+        <figure><img src="assets/images/battaglia.png" alt="" width="50%">
+            <figcaption>Storm in battaglia durante la Guerra dei Mutanti</figcaption>
+        </figure>
+        <video controls width="50%">
+            <source src="assets/media/_Blood Storm_ - Storm DLC Trailer _ Marvel's Midnight Suns.mp4" type="video/mp4">
+            Il tuo browser non supporta il video.
+        </video>
+        <div>
+            <a href="https://www.marvel.com/characters/storm">Sito ufficiale Marvel di Storm</a>
+        </div>
+        <table border="1xp">
+            <thead>
+                <tr>
+                    <th>Nome Attacco</th>
+                    <th>Tipo</th>
+                    <th>Potenza</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manipolazione dell'energia elettrica</td>
+                    <td rowspan="8">Offensivo</td>
+                    <td rowspan="7">Forte</td>
+                </tr>
+                <tr>
+                    <td>Manipolazione del vento</td>
+                </tr>
+                <tr>
+                    <td>Flash Flood</td>
+                </tr>
+                <tr>
+                    <td>Freeze Flash</td>
+                </tr>
+                <tr>
+                    <td>Pioggia Acida</td>
+                </tr>
+                <tr>
+                    <td>Uragano</td>
+                </tr>
+                <tr>
+                    <td>Grandine</td>
+                </tr>
+                <tr>
+                    <td>Nebbia</td>
+                    <td>Debole</td>
+                </tr>
+                <tr>
+                    <td>Umidità</td>
+                    <td rowspan="2">Ambientale</td>
+                    <td rowspan="2">Debole</td>
+                </tr>
+                <tr>
+                    <td>Pressione atmosferica</td>
+
+                </tr>
+                <tr>
+                    <td>Bomba a Idrogeno</td>
+                    <td>Esplosivo</td>
+                    <td>Forte</td>
+                </tr>
+                <tr>
+                    <td>Pressure Field</td>
+                    <td colspan="2">Difensivo</td>
+                </tr>
+                <tr>
+                    <td>Protezione alla Telepatia</td>
+                    <td colspan="2">Telepatico</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <article>
+            <form action="form.html" method="POST">
+                <p>Contattami</p>
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="nome" name="nome" required minlength="3" />
+                <br/>
+                <label for="email">Indirizzo Email: </label>
+                <input type="text" id="email" name="email" required />
+                <br/>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required pattern=".{6,}" />
+                <br/>
+                <label for="anni">Età: </label>
+                <input type="number" id="anni" name="anni" min="13" max="120" />
+                <br/>
+                <label for="valutazione">Valutazione del personaggio: </label>
+                <input type="range" min="0" max="10" step="1" />
+                <br/>
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" maxlength="500"></textarea>
+                <br/>
+                <label for="motivo">Motivo del Contatto</label>
+                <select name="motivo" id="motivo">
+            <option value="domanda">Domanda</option>
+            <option value="collaborazione">Proposta di collaborazione</option>
+            <option value="altro">Altro</option>
+          </select>
+                <br/>
+                <label for="trovato">Come hai conosciuto Storm?</label>
+                <input type="text" id="trovato" name="trovato" list="opzioni" />
+                <datalist id="opzioni">
+            <option value="fumetti"></option>
+            <option value="film"></option>
+            <option value="amici"></option>
+          </datalist>
+                <p>Metodo di Contatto Preferito</p>
+                <input type="radio" id="email" name="contatto" value="email" />
+                <label for="email">Email</label>
+                <input type="radio" id="telefono" name="contatto" value="telefono" />
+                <label for="telefono">Telefono</label>
+                <p>Iscriviti a...</p>
+                <input type="checkbox" id="notizie" name="iscrizioni" value="notizie" />
+                <label for="aggiornamenti">Aggiornamenti</label>
+                <input type="checkbox" id="eventi" name="iscrizioni" value="eventi" />
+                <label for="eventi">Eventi</label>
+                <br/>
+                <input type="submit" value="Invia Messaggio" />
+            </form>
+        </article>
+        <div id="bottom"></div>
+    </main>
+    <footer>
+        <p>© 2025 Storm Fan Page. Tutti i diritti riservati.</p>
+
+    </footer>
+    <!-- Fine della pagina Supereroe -->
+</body>
+
+</html>
