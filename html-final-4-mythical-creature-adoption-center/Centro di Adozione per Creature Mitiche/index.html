@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro di Adozione per Creature Mitiche</title>
+</head>
+
+<body>
+    <header>
+        <h1>Centro di Adozione per Creature Mitiche</h1>
+        <nav>
+            <a href="#home">Home</a> <br />
+            <a href="#adopt">Adotta</a> <br />
+            <a href="#creatures">Creature</a> <br />
+            <a href="#faq">FAQ</a> <br />
+            <a href="https://it.wikipedia.org/wiki/Categoria:Creature_leggendarie">Encyclopedia of Mythical
+                Creatures</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <figure>
+                <img src="assets/images/creature mistiche.jpg" alt="Paesaggio magico con creature" width="600xp">
+                <figcaption>Benvenuto nella tua prossima avventura!</figcaption>
+            </figure>
+            <audio src="assets/media/Benvenuto.mp3" controls></audio>
+            <p>Benvenuto nel Mondo Magico...
+                <br/> Dove lo scorrere del tempo si piega ai desideri del cuore,
+                <br/>le fenici risorgono dalle fiamme,
+                <br/>i draghi danzano tra le nuvole
+                <br/>e gli unicorni custodiscono segreti antichi come le stelle.
+                <br/>Un <em>viaggio straordinario</em> in un luogo fuori dal tempo,
+                <br/>dove ogni passo è un'avventura con <strong>compagni magici</strong>
+                <br/>che rendono ogni incontro un incanto.
+                <br/>Un'occasione che capita <span>una volta nella vita</span>:
+                <br/>la possibilità di varcare le porte di un regno sospeso tra sogno e realtà,
+                <br/>dove l’immaginazione prende il volo e la meraviglia non ha confini.
+                <br/>Preparati a vivere l 'incanto.
+            </p>
+            <br />
+            <a href="https://it.wikipedia.org/wiki/Drago" target="_blank">
+                <img src="assets/images/Drago.png" width="600xp" /></a>
+            <br />
+        </section>
+        <section id="adopt">
+            <article>
+                <!--Questo è un form, serve a mandare dati ad un altro file-->
+                <form action="submit_adoption.html" method="POST">
+                    <p>Adotta una Creatura</p>
+                    <label for="nome">Nome Completo: </label>
+                    <input type="text" id="nome" name="nome" required minlength="3" />
+                    <br />
+                    <label for="email">Indirizzo Email: </label>
+                    <input type="text" id="email" name="email" required />
+                    <br />
+                    <label for="anni">Età: </label>
+                    <input type="number" id="anni" name="anni" min="13" max="120" />
+                    <br />
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required pattern=".{6,}" />
+                    <br />
+                    <label for="creatura">Creatura Preferita</label>
+                    <select name="creatura" id="creatura">
+                        <option value="drago">Drago</option>
+                        <option value="unicorno">Unicorno</option>
+                        <option value="fenice">Fenice</option>
+                        <option value="grifone">Grifone</option>
+                    </select>
+                    <br />
+                    <label for="ritiro">Dove vuoi ritirare la tua creatura?</label>
+                    <input type="text" id="ritiro" name="ritiro" list="opzioni" />
+                    <datalist id="opzioni">
+                        <option value="Avalon"></option>
+                        <option value="Atlantide"></option>
+                        <option value="El Dorado"></option>
+                        <option value="Camelot"></option>
+                    </datalist>
+                    <br />
+                    <label for="valutazione">Livello di Compatibilità Magica: </label>
+                    <input type="range" min="0" max="100" step="1" />
+                    <br />
+                    <p>Abilità magiche</p>
+                    <input type="checkbox" id="volo" name="abilità" value="volo" />
+                    <label for="volo">Volo</label>
+                    <input type="checkbox" id="incantesimi" name="abilità" value="incantesimi" />
+                    <label for="incantesimi">Incantesimi</label>
+                    <input type="checkbox" id="pozioni" name="abilità" value="pozioni" />
+                    <label for="pozioni">Creazione di Pozioni</label>
+                    <br />
+                    <p>Tempi di adozione</p>
+                    <input type="radio" id="urgente" name="Tempi" value="urgente" />
+                    <label for="urgente">Urgente</label>
+                    <input type="radio" id="settimana" name="contatto" value="settimana" />
+                    <label for="settimana">Entro una settimana</label>
+                    <input type="radio" id="senzafretta" name="contatto" value="senzafretta" />
+                    <label for="senzafretta">Senza Fretta</label>
+                    <br />
+                    <label for="messaggio">Perchè desideri adottare una creatura</label>
+                    <br />
+                    <textarea id="messaggio" maxlength="500"></textarea>
+                    <br />
+                    <input type="submit" value="Adotta Ora" />
+                    <br />
+                    <br />
+                    <video src="assets/media/video-creature-mistiche.mp4" alt="Scopri il mondo delle creature mitiche!" controls width="50%">Scopri il mondo delle creature mitiche!</video>
+                </form>
+            </article>
+        </section>
+        <section id="creatures">
+            <table border="1xp">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Specie</th>
+                        <th>Livello di Potenza</th>
+                        <th>Disponibilità</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fira</td>
+                        <td>Fenice</td>
+                        <td>95</td>
+                        <td>Disponibile</td>
+                    </tr>
+                    <tr>
+                        <td>Stormwing</td>
+                        <td>Drago</td>
+                        <td>100</td>
+                        <td>Non disponibile</td>
+                    </tr>
+                    <tr>
+                        <td>Silvershadow</td>
+                        <td>Unicorno</td>
+                        <td>88</td>
+                        <td>Disponibile</td>
+                    </tr>
+                    <tr>
+                        <td>Grumblebeard</td>
+                        <td>Grifone</td>
+                        <td>92</td>
+                        <td>Disponibile</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Creature Totali</td>
+                        <td colspan="3">4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <br />
+        <section id="faq">
+            <div>
+                <p>Domande e Risposte</p>
+                <ul>
+                    <li><strong>Q</strong>: Quanto tempo richiede l'adozione? <br />
+                        <strong>A</strong>: La maggior parte delle creature è pronta entro 3–5 giorni magici.
+                        <br /><a href="#adopt">Adotta una creatura</a>
+                    </li>
+                    <br />
+                    <li><strong>Q</strong>: È richiesta la formazione?
+                        <br />
+                        <strong>A</strong>: La formazione di base è <strong>richiesta</strong> per draghi e grifoni.
+                    </li>
+                    <br />
+                    <li><strong>Q</strong>: Posso adottare più di una creatura?
+                        <br />
+                        <strong>A</strong>: Sì, se si dimostra una <strong>alta compatibilità magica</strong>.
+                    </li>
+                </ul>
+        </section>
+
+        <br />
+
+        <div id="bottom"></div>
+    </main>
+    <footer>
+        <p>© 2025 Centro di Adozione per Creature Mitiche.</p>
+        <a href="#home">Torna su</a>
+
+    </footer>
+    <!-- Fine della pagina Supereroe -->
+</body>
+
+</html>
