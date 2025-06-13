@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <form action="form.html" method="POST">
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="nome" name="nome" required minlength="3" />
+                <br/>
+                <label for="email">Indirizzo Email: </label>
+                <input type="text" id="email" name="email" required />
+                <br/>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required pattern=".{6,}" />
+                <br/>
+                <label for="anni">Età: </label>
+                <input type="number" id="anni" name="anni" min="13" max="120" />
+                <br/>
+                <label for="valutazione">Soddisfazione: </label>
+                <input type="range" min="0" max="10" step="1" />
+                <br/>
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" maxlength="500"></textarea>
+                <br/>
+                <label for="motivo">Motivo del Contatto</label>
+                <select name="motivo" id="motivo">
+            <option value="offertalavoro">Offerta di Lavoro</option>
+            <option value="collaborazione">Collaborazione</option>
+            <option value="altro">Altro</option>
+          </select>
+                <br/>
+                <label for="trovato">Come mi hai trovato?</label>
+                <input type="text" id="trovato" name="trovato" list="opzioni" />
+                <datalist id="opzioni">
+            <option value="google"></option>
+            <option value="amico"></option>
+            <option value="linkedin"></option>
+          </datalist>
+                <p>Metodo di Contatto Preferito</p>
+                <input type="radio" id="email" name="contatto" value="email" />
+                <label for="email">Email</label>
+                <input type="radio" id="telefono" name="contatto" value="telefono" />
+                <label for="telefono">Telefono</label>
+                <p>Iscriviti a...</p>
+                <input type="checkbox" id="notizie" name="iscrizioni" value="notizie" />
+                <label for="notizie">Notizie</label>
+                <input type="checkbox" id="eventi" name="iscrizioni" value="eventi" />
+                <label for="eventi">Eventi</label>
+                <br/>
+                <input type="submit" value="Invia Messaggio" />
+            </form>
+        </article>
+    </main>
+    <!-- Fine del modulo contatti -->
+</body>
+
+</html>
