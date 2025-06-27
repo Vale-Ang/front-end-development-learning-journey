@@ -1,0 +1,16 @@
+#primo{
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    border: solid 3px #999;
+    box-sizing: content-box;
+    background-color: lightblue;
+}
+#secondo{
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    border: solid 3px #999;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
