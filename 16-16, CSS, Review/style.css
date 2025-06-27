@@ -1,0 +1,12 @@
+p{
+    width: 320px;
+    height: 150px;
+    border: dotted blue 3px;
+    padding: 20px;
+
+}
+.box-centrato{width: 400px;
+margin: 0 auto;
+border: solid black 1px;}
+
+.nascosto{visibility: hidden;}
