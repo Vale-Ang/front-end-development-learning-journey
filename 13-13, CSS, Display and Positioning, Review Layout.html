@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenitore-principale{
+            position: relative;
+            width: 800px;
+            background-color: lightgoldenrodyellow;
+        }
+        .blocco-rosso{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: red;
+            height: 200px;
+            z-index: 1;
+        }
+        .blocco-verde{
+            position: sticky;
+            top: 60px;
+            background-color: green;
+            height: 50px;
+            z-index: 2;
+        }
+        .blocco-arancione{
+            float: right;
+            width: 300px;
+            background-color: orange;
+            height: 100px;
+        }
+        h1{
+            display: inline;
+            background-color: yellow;
+            z-index: 9;
+        }
+        .clear-both{
+            clear: both;
+            background-color: blue;
+            z-index: 5;
+        }
+        .rettangolo{
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenitore-principale">
+        <div class="blocco-rosso">Posizione: assoluta</div>
+        <div class="blocco-verde">Posizione: sticky</div>
+        <div class="blocco-arancione">Float a destra</div>
+    </div>
+    <h1>Titolo</h1>
+    <span>Elemento affiancato</span>
+    <div class="clear-both">Testo clear both</div>
+    <div class="rettangolo" style="background-color: aqua;"><p>Rettangolo 1</p></div>
+    <div class="rettangolo" style="background-color: purple;"><p>Rettangolo 2</p></div>
+    <div class="rettangolo" style="background-color: pink"><p>Rettangolo 3</p></div>
+</body>
+</html>
